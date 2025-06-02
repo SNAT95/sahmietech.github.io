@@ -1,47 +1,84 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f8fafc;
 }
 
 header {
-  background: #0f172a;
+  background-color: #0f172a;
   color: white;
-  padding: 1rem;
   text-align: center;
+  padding: 1.2rem;
+}
+
+nav {
+  margin-top: 0.5rem;
 }
 
 nav a {
   color: #38bdf8;
-  margin: 0 1rem;
+  margin: 0 15px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 main {
   padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .product {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1.5rem;
-  text-align: center;
+  background-color: white;
   border-radius: 8px;
-  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .product img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  border-radius: 5px;
+  border-radius: 6px;
 }
 
-a {
-  background: #2563eb;
+.product h3 {
+  margin: 0.5rem 0;
+}
+
+.product p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.product a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  background-color: #2563eb;
   color: white;
   padding: 0.5rem 1rem;
-  display: inline-block;
-  margin-top: 0.5rem;
-  border-radius: 4px;
+  border-radius: 5px;
   text-decoration: none;
+}
+
+.product a:hover {
+  background-color: #1d4ed8;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e2e8f0;
+  font-size: 0.9rem;
 }
